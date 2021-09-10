@@ -1,6 +1,8 @@
 /**
  * fil: css/style.css
  **/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
 /* Variabler: genbruges og gør designvalg enkle */
 :root {
   /* farver */
@@ -13,12 +15,12 @@
   /* navigationsfarven */
   --navfarve: #e8dd19;
   /* fonte */
+  --font-family: : :'Raleway', sans-serif;
 }
 
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap');
 /*Bruges sådan: font-family: 'Abril Fatface', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 /* Her bruges en variabel: --blue */
 body {
   background-color: var(--black);
@@ -28,7 +30,7 @@ body {
 }
 
 h1, h3, h4, h5, h6 {
-  font-family: 'Permanent Marker', cursive;
+  font-family: var(--font-family);
   color: var(--white);
   text-align: center;
 }
