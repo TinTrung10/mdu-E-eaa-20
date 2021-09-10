@@ -1,0 +1,106 @@
+/**
+ * fil: css/style.css
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #19d6e8;
+  --white: #ffffff;
+  --black: #0a0a09;
+  --pink: #f21dc7;
+  --red: #ed1237;
+
+  /* navigationsfarven */
+  --navfarve: #e8dd19;
+  /* fonte */
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&display=swap');
+/*Bruges sådan: font-family: 'Abril Fatface', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--black);
+  font-family: 'Abril Fatface', cursive;
+  color: var(--white);
+  background-clip:
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive;
+  color: var(--white);
+  text-align: center;
+}
+/* Layout */
+
+/* Typografi */
+h2 {
+  border-bottom: 2px solid var(--blue);
+  color: var(--white);
+  background-color: var(--black);
+  text-align: left;
+  padding: 23px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+nav {
+  background-color: var(--blue);
+  color: var(--white);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* Links */
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--white); /* farven på baggrunden af teksten, når man holder musen ovenpå */
+}
+
+ul {
+  list-style-type: none; /* fjerner bullets ved listen */
+}
+
+nav ul li {
+  display: inline; /* menuen bliver vandret */
+}
+
+/* tekstbredde */
+
+h2, p {
+  width: 400px;
+}
+
+p {
+  margin-top: 37px;
+}
+
+/* wrap går rundt om alle elementer i dette ex */
+
+#wrap {
+  width: 655px;
+  margin: auto; /* centrerer alt! */
+}
+/*
+figure {
+  height: 450px;
+  width: 450px;
+  overflow: auto;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+.galleri figure {
+  float: left;
+}
+*/
+img {
+  float: none;
+  margin-top: 37px;
+}
